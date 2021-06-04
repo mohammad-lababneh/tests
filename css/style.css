@@ -11,21 +11,30 @@ body{
 
 table, th, td {
     border: 1px solid rgb(168, 33, 33);
+  
   }
+  th, td { width: 250px;
+    height: 100px;}
 
+    img{
+        width: 150px;
+        height: 150px;
+    }
   table{
      
      border-color:rgba(255, 229, 72, 255) ;
      border-width: 0px;
      border-style: solid;
-     /* border-radius: 20px; */
+      border-radius: 10px; 
     background-color: rgb(241, 246, 170);
         border-collapse: collapse;
-      
+      text-align: center;
 margin-left:50%;
+margin-top: 100px;
 position: relative;
-bottom: 200px;
+bottom: 290px;
 right: 180px;
+
 
   }
  
@@ -39,8 +48,9 @@ right: 180px;
       height: 50px;
       padding: 30px  50px 50px;   
       width: auto;
-
-      
+      position: relative;
+      top: 0;
+   
   }
 
   footer{
@@ -61,6 +71,7 @@ right: 180px;
       background-color: rgba(255, 229, 72, 255);
       width: 150px;
  height: 200px;
+ margin-top: 200px;
  } 
  label{
 text-align: center;
@@ -76,5 +87,11 @@ color: red;
  #submit{
      color: white;
      background-color: red;
+ }
+ button{
+    background-color: red;
+    margin-left: 180px;
+    margin-bottom:50%;
+    /* position: fixed; */
  }
  
