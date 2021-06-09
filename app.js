@@ -59,7 +59,7 @@ function render() {
         let p = document.createElement('p');
         tr1.appendChild(p);
 
-        p.textContent = `customer Name : ${lovers[i].custName} /`+ `\n`+`food Type: ${lovers[i].foodType}/` + `\n`+ `Food Prise : ${random()} JOD`;
+        p.textContent = `customer Name : ${lovers[i].custName} /`+ `<br>` +`food Type: ${lovers[i].foodType}/` +`<br>` +  `Food Prise : ${random()} JOD`;
     }
 }
 

@@ -69,9 +69,9 @@ right: 180px;
   fieldset{
       margin: 50px 100px 10px ;
       background-color: rgba(255, 229, 72, 255);
-      width: 150px;
+      width: 50px;
  height: 200px;
- margin-top: 200px;
+ /* margin-top: 200px; */
  } 
  label{
 text-align: center;
@@ -82,11 +82,15 @@ color: red;
      width: 190px;
  }
  select{
-    width: 190px;
+    width: 200px;
+    border-radius: 5px;
+
  }
  #submit{
      color: white;
      background-color: red;
+     border-radius: 5px;
+
  }
  button{
     background-color: red;
