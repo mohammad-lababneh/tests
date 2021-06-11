@@ -4,7 +4,7 @@ let table = document.createElement('table');
 container.appendChild(table);
 
 let remove = document.getElementById('Remove');
-remove.addEventListener('click',removeOrders);
+remove.addEventListener('click', removeOrders);
 
 let tr = document.createElement('tr');
 table.appendChild(tr);
@@ -20,7 +20,7 @@ let lovers = [];
 function foodLovers(foodType, custName) {
     this.foodType = foodType;
     this.custName = custName;
-    this.path = `img/${foodType}.jpg` ;
+    this.path = `img/${foodType}.jpg`;
 
     lovers.push(this);
 }
@@ -36,10 +36,10 @@ function formLis(event) {
     new foodLovers(foodTyp, custNam);
     settingItem();
     render();
-    
+
 }
 
-function random(){
+function random() {
     return Math.floor(Math.random() * (90 - 10) + 10);
 }
 
@@ -59,29 +59,36 @@ function render() {
         let p = document.createElement('p');
         tr1.appendChild(p);
 
-        p.textContent = `customer Name : ${lovers[i].custName} /`+ `<br>` +`food Type: ${lovers[i].foodType}/` +`<br>` +  `Food Prise : ${random()} JOD`;
+        p.textContent =
+
+            ` customer Name : ${lovers[i].custName} 
+
+
+         food Type : ${lovers[i].foodType} 
+
+
+         Food Prise : ${random()} JOD `;
     }
 }
 
-function settingItem(){
-let setObject = JSON.stringify(lovers);
-localStorage.setItem('key',setObject);
+function settingItem() {
+    let setObject = JSON.stringify(lovers);
+    localStorage.setItem('key', setObject);
 
 }
 
-function getObject(){
-let local = localStorage.getItem('key');
-let convert = JSON.parse(local);
-if (convert !== null) {
-    lovers=convert;
-}
+function getObject() {
+    let local = localStorage.getItem('key');
+    let convert = JSON.parse(local);
+    if (convert !== null) {
+        lovers = convert;
+    }
 
 
 }
 getObject();
 
-function removeOrders()
-{
+function removeOrders() {
     localStorage.clear();
     window.location.reload();
 
