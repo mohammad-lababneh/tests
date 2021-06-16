@@ -83,8 +83,7 @@ function getObject() {
     if (convert !== null) {
         lovers = convert;
     }
-
-
+    render()
 }
 getObject();
 
